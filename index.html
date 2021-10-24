@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="calculator-container">
+    <div class="calculator-top-container">
+      <div class="btn-top-container">
+        <button class="close-btn"><span class="display-none">x</span></button>
+        <button class="minimize-btn"><span class="display-none">-</span></button>
+        <button class="zoom-btn"><span class="display-none">+</span></button>
+      </div>
+      
+      <div class="displayed-number-container">
+        <span class="displayed-number">0</span>
+      </div>
+    </div>
+    
+    <div class="calculator-bottom-container">
+      <button class="ac-btn dark-grey-btns ">AC</button>
+      <button class="negate-displayed-number-btn dark-grey-btns ">+/-</button>
+      <button class="percent-btn dark-grey-btns">%</button>
+      <button class="operation-btn divide-btn orange-btns">/</button>
+      <button class="operation-btn multiply-btn orange-btns">x</button>
+      <button class="operation-btn substract-btn orange-btns">-</button>
+      <button class="operation-btn add-btn orange-btns">+</button>
+      <button class="operation-btn equal-btn orange-btns">=</button>
+      <button class="comma light-grey-btns">,</button>
+
+      <button class="number-btn one-btn light-grey-btns">1</button>
+      <button class="number-btn two-btn light-grey-btns">2</button>
+      <button class="number-btn three-btn light-grey-btns">3</button>
+      <button class="number-btn four-btn light-grey-btns">4</button>
+      <button class="number-btn five-btn light-grey-btns">5</button>
+      <button class="number-btn six-btn light-grey-btns">6</button>
+      <button class="number-btn seven-btn light-grey-btns">7</button>
+      <button class="number-btn eight-btn light-grey-btns">8</button>
+      <button class="number-btn nine-btn light-grey-btns">9</button>
+      <button class="number-btn zero-btn light-grey-btns">0</button>
+    </div>
+  </div>
+
+  <script src="calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+/* .display-none {
+  display: none;
+} */
+
+.calculator-container {
+  height: 330px;
+  width: 240px;
+  border: 1px solid;
+  margin: 100px auto;
+  border-radius: 10px;
+}
+
+.calculator-top-container {
+  background: #464256;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.btn-top-container {
+  width: 100px;
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+.btn-top-container button {
+  border-radius: 10px;
+  width: 15px;
+  height: 15px;
+  vertical-align: top;
+  background: #5f5769;
+  position: relative;
+}
+
+.btn-top-container button span {
+  position: absolute;
+  right: 4px;
+  top: 1px;
+  font-size: 11px;
+}
+
+.btn-top-container button.minimize-btn span {
+  font-size: 15px;
+  top: -2px;
+}
+
+.btn-top-container button.minimize-btn {
+  background: #f65f57;
+  border: none;
+}
+
+.btn-top-container button.close-btn {
+  background: #fabc2f;
+  border: none;
+}
+.btn-top-container button.zoom-btn {
+  background: #44c840;
+  border: none;
+}
+
+div.displayed-number-container {
+  max-width: 100%;
+  position: relative;
+  height: 58px;
+}
+
+span.displayed-number {
+  font-size: 50px;
+  color: #fff;
+  position: absolute;
+  right: 10px;
+}
+
+.calculator-bottom-container {
+  height: 74%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "ac-btn negate-displayed-number-btn percent-btn divide-btn"
+    "seven-btn eight-btn nine-btn multiply-btn"
+    "four-btn five-btn six-btn substract-btn"
+    "one-btn two-btn three-btn add-btn"
+    "zero-btn zero-btn comma-btn equal-btn";
+}
+
+button.ac-btn {
+  border-left: none;
+  grid-area: ac-btn;
+}
+
+.negate-displayed-number-btn {
+  grid-area: negate-displayed-number-btn;
+}
+
+.percent-btn {
+  grid-area: percent-btn;
+}
+
+button.divide-btn {
+  grid-area: divide-btn;
+  border-left: 1px solid #4a4256;
+}
+
+.multiply-btn {
+  grid-area: multiply-btn;
+}
+
+.substract-btn {
+  grid-area: substract-btn;
+}
+
+.add-btn {
+  grid-area: add-btn;
+}
+
+.equal-btn {
+  grid-area: equal-btn;
+  border-bottom-right-radius: 10px;
+}
+
+button.comma {
+  grid-area: comma-btn;
+  border: none;
+  border-right: 1px solid #4a4256;
+}
+
+.one-btn {
+  grid-area: one-btn;
+}
+.two-btn {
+  grid-area: two-btn;
+}
+.three-btn {
+  grid-area: three-btn;
+}
+.four-btn {
+  grid-area: four-btn;
+}
+.five-btn {
+  grid-area: five-btn;
+}
+.six-btn {
+  grid-area: six-btn;
+}
+.seven-btn {
+  grid-area: seven-btn;
+}
+.eight-btn {
+  grid-area: eight-btn;
+}
+.nine-btn {
+  grid-area: nine-btn;
+}
+.zero-btn {
+  grid-area: zero-btn;
+  border-bottom-left-radius: 10px;
+}
+
+.calculator-bottom-container > * {
+  color: #fff;
+  font-size: 19px;
+  outline: none;
+}
+
+.dark-grey-btns {
+  background: #5f5769;
+  border: none;
+  border-left: 1px solid #4a4256;
+  border-bottom: 1px solid #4a4256;
+}
+
+button.dark-grey-btns:active {
+  background: #817883;
+}
+
+.light-grey-btns {
+  background: #817883;
+  border: none;
+  border-bottom: 1px solid#4a4256;
+  border-right: 1px solid #4a4256;
+}
+
+button.light-grey-btns:active {
+  background-color: #d6d6d6;
+}
+
+.orange-btns {
+  background: #f99e0d;
+  border: none;
+  border-bottom: 1px solid #4a4256;
+}
+button.orange-btns:active {
+  background-color: #ee8b3d;
+  border: 1px solid #4a4256;
+}
